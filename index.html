@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Employee Data App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Employee Data App</h1>
+
+    <div id="employee-form">
+      <h2>Add Employee</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <label for="employee-id">Employee ID:</label>
+      <input type="text" id="employee-id" required />
+      <label for="department">Department:</label>
+      <input type="text" id="department" required />
+      <label for="salary">Salary:</label>
+      <input type="text" id="salary" required />
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" required />
+      <label for="position">Position:</label>
+      <input type="text" id="position" required />
+      <button id="add-employee">Add Employee</button>
+    </div>
+
+    <div id="employee-list">
+      <h2>Employee List</h2>
+      <input type="text" id="filter-input" placeholder="Search..." />
+      <select id="filter-option">
+        <option value="name">Name</option>
+        <option value="employeeId">Employee ID</option>
+        <option value="department">Department</option>
+        <option value="salary">Salary</option>
+        <option value="gender">Gender</option>
+        <option value="position">Position</option>
+      </select>
+      <button id="filter-button">Filter</button>
+      <ul id="employees"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

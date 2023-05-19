@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+#employee-form {
+    margin-bottom: 20px;
+}
+
+#employee-form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#employee-list {
+    margin-top: 20px;
+}
+
+#employee-list input[type="text"] {
+    margin-right: 10px;
+}
+
+#employees li {
+    margin-bottom: 5px;
+}

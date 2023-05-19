@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     employeesList.innerHTML = "";
     employees.forEach((employee) => {
       const li = document.createElement("li");
-      li.textContent = `Name: ${employee.name}, Employee ID: ${employee.employeeId}, Department: ${employee.department}, Salary: ${employee.salary}, Gender: ${employee.gender}, Position: ${employee.position}`;
+      li.textContent = `Name: ${employee.title}, Employee ID: ${employee.id}, Department: ${employee.userId}, Salary: ${employee.body}, Gender: ${employee.gender}, Position: ${employee.position}`;
       employeesList.appendChild(li);
     });
   };
